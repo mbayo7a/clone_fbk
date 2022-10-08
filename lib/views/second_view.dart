@@ -9,10 +9,6 @@ class SecondView extends StatefulWidget {
 }
 
 class _SecondViewState extends State<SecondView> {
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,8 +70,8 @@ class _SecondViewState extends State<SecondView> {
               Row(
                 children: [
                   const Icon(
-                    Icons.emoji_emotions_outlined,
-                    color: Colors.yellow,
+                    Icons.sentiment_very_satisfied,
+                    color: Color.fromARGB(255, 172, 158, 33),
                   ),
                   TextButton(
                     onPressed: () {
@@ -623,26 +619,30 @@ class _SecondViewState extends State<SecondView> {
                   padding: const EdgeInsets.only(left: 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
-                      Text("Noirs qui s'aiment ",
-                          style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold)),
-                      SizedBox(
+                    children: [
+                      Row(
+                        children: const [
+                          Text("Noirs qui s'aiment   ",
+                              style: TextStyle(
+                                  fontSize: 17, fontWeight: FontWeight.bold)),
+                          Icon(
+                            Icons.notifications,
+                            color: Colors.black,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
                         height: 2,
                       ),
-                      Text(
-                        "30 nov 2021 ",
-                        style: TextStyle(fontSize: 10, color: Colors.grey),
+                      const Text(
+                        "06 janv 2022 ",
+                        style: TextStyle(fontSize: 12, color: Colors.grey),
                       ),
                     ],
                   ),
                 ),
-                const Icon(
-                  Icons.notifications,
-                  color: Colors.black,
-                ),
                 const Padding(
-                  padding: EdgeInsets.only(left: 70),
+                  padding: EdgeInsets.only(left: 65),
                   child: Icon(
                     Icons.more_horiz,
                     color: Colors.grey,
@@ -667,10 +667,6 @@ class _SecondViewState extends State<SecondView> {
           Container(
             height: 300,
             color: Colors.amber,
-            // child: const FittedBox(
-            //          fit: BoxFit.contain,
-            //         child: Image(image: AssetImage('images/ima2.jpg')),
-            //       ),
           ),
           const SizedBox(
             height: 10,
@@ -695,11 +691,14 @@ class _SecondViewState extends State<SecondView> {
                   size: 12,
                 ),
               ),
-              Text(
-                '4.4K',
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 15,
+              Padding(
+                padding: EdgeInsets.only(left: 5),
+                child: Text(
+                  '4.4K',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 15,
+                  ),
                 ),
               ),
             ],
@@ -772,28 +771,37 @@ class _SecondViewState extends State<SecondView> {
             child: Row(
               children: [
                 const CircleAvatar(
+                    radius: 25,
                     backgroundImage: AssetImage('images/plant2.jpg')),
                 Padding(
                   padding: const EdgeInsets.only(left: 10),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
-                      Text("BerniShopHair ",
-                          style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold)),
-                      SizedBox(
+                    children: [
+                      Row(
+                        children: const [
+                          Text("BerniShopHair ",
+                              style: TextStyle(
+                                  fontSize: 17, fontWeight: FontWeight.bold)),
+                          Icon(
+                            Icons.notifications,
+                            color: Colors.black,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
                         height: 2,
                       ),
-                      Text(
-                        "30 nov 2021 ",
-                        style: TextStyle(fontSize: 10, color: Colors.grey),
+                      Row(
+                        children: const [
+                          Text(
+                            "30 nov 2021  ",
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
+                        ],
                       ),
                     ],
                   ),
-                ),
-                const Icon(
-                  Icons.notifications,
-                  color: Colors.black,
                 ),
                 const Padding(
                   padding: EdgeInsets.only(left: 80),
@@ -821,20 +829,16 @@ class _SecondViewState extends State<SecondView> {
           Container(
             margin: const EdgeInsets.only(top: 5),
             height: 250,
-
             color: Colors.redAccent,
-            //child: const FittedBox(
-            //fit: BoxFit.cover,
-            //child: Image(image: AssetImage('images/plant2.jpg')),
-            //),
           ),
           const SizedBox(
             height: 10,
           ),
-          const SizedBox(
-            height: 50,
-            child: Text(
-              "cette entrée la , Ambiance mariage noirs qui s'aiment depuis la tanzanie... ",
+          Container(
+            margin: const EdgeInsets.only(left: 5),
+            height: 80,
+            child: const Text(
+              "la qualité c'est nous ,passez votre commande maintenant pour ne pas rater ce rabais de prix sur tout nos produit en stock",
               style: TextStyle(color: Colors.black, fontSize: 17),
             ),
           ),
@@ -848,11 +852,14 @@ class _SecondViewState extends State<SecondView> {
                   size: 12,
                 ),
               ),
-              Text(
-                '4.4K',
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 15,
+              Padding(
+                padding: EdgeInsets.only(left: 5),
+                child: Text(
+                  '4.4K',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 15,
+                  ),
                 ),
               ),
             ],
@@ -920,6 +927,180 @@ class _SecondViewState extends State<SecondView> {
                       onPressed: () {},
                       child: const Text(
                         '3',
+                        style: TextStyle(color: Colors.black54, fontSize: 17),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          const Divider(
+            height: 2,
+            thickness: 2,
+            color: Colors.grey,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Row(
+              children: [
+                const CircleAvatar(
+                    radius: 25,
+                    backgroundImage: AssetImage('images/plant2.jpg')),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text("Forever Movies Africa",
+                          style: TextStyle(
+                              fontSize: 17, fontWeight: FontWeight.bold)),
+                      const SizedBox(
+                        height: 2,
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            "Suggestions ",
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
+                          Text(
+                            " . 2j  .",
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
+                          ),
+                          Icon(
+                            Icons.public,
+                            color: Colors.grey,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 80),
+                  child: Icon(
+                    Icons.more_horiz,
+                    color: Colors.grey,
+                  ),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 5),
+            height: 70,
+            child: const Text(
+              "Voici les 6 étoiles du cinema africain ,les 6 meilleures actrices de la Nollywood de la deuxieme generation hein ",
+              style: TextStyle(color: Colors.black, fontSize: 17),
+            ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(top: 5),
+            height: 250,
+            color: Colors.purpleAccent,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: const [
+              CircleAvatar(
+                radius: 10,
+                child: Icon(
+                  Icons.thumb_up,
+                  color: Colors.white,
+                  size: 12,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 5),
+                child: Text(
+                  'Josline Mbula et 32 K autres personnes',
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 15,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 5),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                height: 40,
+                width: 100,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.grey.withOpacity(0.1)),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 5),
+                  child: Row(
+                    children: [
+                      const Icon(
+                        Icons.thumb_up,
+                        color: Colors.black54,
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: const Text(
+                          '32453',
+                          style: TextStyle(color: Colors.black54, fontSize: 17),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 100,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.grey.withOpacity(0.1)),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.message,
+                      color: Colors.black54,
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        '3456',
+                        style: TextStyle(color: Colors.black54, fontSize: 17),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 100,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30),
+                    color: Colors.grey.withOpacity(0.1)),
+                child: Row(
+                  children: [
+                    const Icon(
+                      Icons.share,
+                      color: Colors.black54,
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text(
+                        '574',
                         style: TextStyle(color: Colors.black54, fontSize: 17),
                       ),
                     )

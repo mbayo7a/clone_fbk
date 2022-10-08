@@ -15,7 +15,7 @@ class _PersonViewState extends State<PersonView> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: Padding(
+        title: Padding(
             padding: const EdgeInsets.only(left: 10, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

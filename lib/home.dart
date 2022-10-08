@@ -1,3 +1,4 @@
+import 'package:clone_fbk/models/menu.dart';
 import 'package:clone_fbk/views/home_sell_view.dart';
 import 'package:clone_fbk/views/message_view.dart';
 import 'package:clone_fbk/views/notification_view.dart';
@@ -17,14 +18,16 @@ class Home extends StatelessWidget {
           appBar: AppBar(
             elevation: 0.5,
             backgroundColor: Colors.white,
-            title: const Text(
+          
+                 
+           /* title: const Text(
               'facebook',
               style: TextStyle(
                   color: Colors.blueAccent,
                   fontWeight: FontWeight.bold,
                   fontSize: 30),
-            ),
-            actions: [
+            ),*/
+           /*  actions: [
               CircleAvatar(
                 radius: 20,
                 backgroundColor: Colors.grey.withOpacity(0.4),
@@ -40,13 +43,18 @@ class Home extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-              Padding(
+             Padding(
                 padding: const EdgeInsets.only(right: 10),
                 child: CircleAvatar(
                   radius: 20,
                   backgroundColor: Colors.grey.withOpacity(0.4),
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                       Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Menu()));
+                    },
                     icon: const Icon(
                       Icons.menu,
                       size: 30,
@@ -55,7 +63,7 @@ class Home extends StatelessWidget {
                   ),
                 ),
               )
-            ],
+            ],*/
             bottom: const TabBar(
                 unselectedLabelColor: Colors.grey,
                 indicatorColor: Colors.white,

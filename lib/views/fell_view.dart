@@ -16,85 +16,87 @@ class _FellViewState extends State<FellView> {
         child: Column(
           children: const [
             SizedBox(
-              height: 20,
+              height: 30,
             ),
             ListTile(
               leading: Icon(
                 Icons.emoji_emotions,
+                size: 35,
                 color: Colors.grey,
               ),
               title: Text(
                 'Ajuter votre activité ou votre humeur',
-                style: TextStyle(color: Colors.grey),
+               
+                style: TextStyle(color: Colors.grey, ),
               ),
             ),
-            Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
+              isThreeLine: false,
               leading: Icon(
-                Icons.emoji_emotions_sharp,
+                Icons.mood_sharp,
+                color: Color.fromARGB(255, 157, 144, 26),
+                size: 35,
               ),
               title: Text(
                 'Se sent...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.sports_handball,
+                color: Colors.redAccent,
+                size: 35,
+
               ),
               title: Text(
                 'En train de feter...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.emoji_people,
+                color: Colors.black,
+                size: 35,
+
               ),
               title: Text(
                 'En train de regarder...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.emoji_food_beverage,
+                color: Colors.greenAccent,
+                size: 35,
+
               ),
               title: Text(
                 'En train de manger...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.tapas,
+                color: Colors.amber,
+                size: 35,
+                
               ),
               title: Text(
                 'En train de boire...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.wheelchair_pickup,
+                color: Color.fromARGB(255, 142, 142, 15),
+                size: 35,
+
               ),
               title: Text(
                 "En train d'assister à...",
@@ -102,43 +104,46 @@ class _FellViewState extends State<FellView> {
             ),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.public,
+                color: Colors.blueAccent,
+                size: 35,
+
               ),
               title: Text(
                 'En voyage  vers...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.self_improvement,
+                color: Colors.purpleAccent,
+                size: 35,
+
               ),
               title: Text(
                 "En train d'écouter...",
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.sports_tennis,
+                color: Color.fromARGB(255, 23, 163, 163),
+                size: 35,
+                
               ),
               title: Text(
                 'Cherche',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.psychology,
+                color: Colors.orangeAccent,
+                size: 35,
+
               ),
               title: Text(
                 'En train de penser...',
@@ -146,37 +151,39 @@ class _FellViewState extends State<FellView> {
             ),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.engineering,
+                color: Color.fromARGB(255, 197, 60, 18),
+                size: 35,
+
               ),
               title: Text(
-                'En traib de lire...',
+                'En train de lire...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.sports_esports,
+                color: Colors.black,
+                size: 35,
+
               ),
               title: Text(
                 'En train de jouer à...',
               ),
             ),
-             Divider(
-              height: 2,
-              thickness: 1,
-            ),
+            Divider(),
             ListTile(
               leading: Icon(
-                Icons.emoji_emotions,
+                Icons.favorite,
+                color: Colors.redAccent,
+                size: 35,
+
               ),
               title: Text(
                 'Soutient...',
               ),
             ),
-            
           ],
         ),
       ),
